@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+
+html
+{
+    font-size: 62.5%;
+}
+header {
+  background-image: url("../images/img_sakura.jpg");          /* 背景画像の設定*/
+  height: 500px;                                             /* 大きさの設定方法       */
+  width: 100%;                                               
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+        width: 100%;
+    }
+}
+header h1 {
+    margin: 30px, 10px;
+    color: #ffffff;
+    height: 500px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+   }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 16px;
+        height: 250px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+        align-items: center; /* 縦方向中央揃え */
+        -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+        justify-content: center; /* 横方向中央揃え */
+    }
+}
+section
+{
+    padding: 30px 0; /* section要素の余白を上下60pxで揃える */ 
+    color: #8d6449;
+}
+
+h2, h3, p {                                     
+    text-align: center;
+    color: #8d6449;
+}
+#point
+{
+    background-color: #fffff9; /* point全体の背景色 */
+}
+#point h2
+{
+    margin-bottom: 20px;
+}
+#point .container
+{
+    display: flex;
+    flex-direction: row;
+}
+#point .box
+{
+    -webkit-flex: 1;
+            flex: 1;
+            margin: 0px 10px;
+            padding: 20px ;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #d6e9ca;      /*  boxの背景色  */
+    float: left; 
+}
+@media (max-width: 768px) {
+    #point .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media {
+    #point .box {
+        margin: 10px;
+    }
+}
+
+footer {
+    color:#8d6449;
+    text-align: center;
+    clear: both;
+    background-color:#fef4f4;
+    padding: 10px;
+}
+.button {
+    padding: 3px 30px; /* 要素の内側の余白 */
+    color: #8d6449; /* 文字色 */
+    border: 1.5px solid #8d6449; /* ボーダー */
+    -webkit-border-radius: 4px; /* 角丸 */
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
